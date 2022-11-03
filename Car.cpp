@@ -1,8 +1,10 @@
 #include "Car.h"
-
 #include <iostream>
 
 Car::Car(const std::string& n) : Vehicle(n) {}
+
+Car::Car(const Car&) = default;
+Car::~Car() = default;
 
 void Car::closeWindows()
 {
